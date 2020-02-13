@@ -74,6 +74,24 @@ enum {
 	DMIC_MAX
 };
 
+enum {
+	DMIC_TX = 0,
+	DMIC_VA = 1,
+
+};
+
+enum {
+	DMIC0 = 0,
+	DMIC1,
+	DMIC2,
+	DMIC3,
+	DMIC4,
+	DMIC5,
+	DMIC6,
+	DMIC7,
+	DMIC_MAX
+};
+
 struct macro_ops {
 	int (*init)(struct snd_soc_codec *codec);
 	int (*exit)(struct snd_soc_codec *codec);
